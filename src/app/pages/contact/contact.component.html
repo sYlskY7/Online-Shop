@@ -1,11 +1,12 @@
 <div class="container">
+    <h2>Formulario de contacto</h2>
     <form [formGroup]="contactForm" class="row g-3 needs-validation" novalidate (submit)="enviar($event)">
         <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email </label>
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
             <input type="email" 
             class="form-control" 
             id="exampleFormControlInput1" 
-            placeholder="name@example.com" 
+            placeholder="pablo.parcha@incentro.com" 
             formControlName="email"
             [ngClass]="{'is-invalid' : hasErrors('email', 'required') || hasErrors('email', 'email')}"
             >
@@ -18,7 +19,7 @@
 
         </div>
         <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
             <textarea class="form-control"
             id="exampleFormControlTextarea1" 
             rows="5" 
@@ -33,7 +34,7 @@
             }
         </div>
         <div class="col-12">
-            <button class="btn btn-primary" type="submit">Contactar</button>
+            <button class="btn btn-warning" type="submit">Contactar</button>
         </div>
     </form>
 </div>
